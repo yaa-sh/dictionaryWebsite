@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body{
+    background-color:#162719;
+}
+.heading{
+    background-color: rgb(3, 41, 105);
+    color: #F2E8CF;
+    font-weight: bolder;
+    border: 2px solid rgb(66, 124, 225);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.heading p{
+    margin-left: 40vw;
+    /* padding: 20px 0px; */
+}
+.container{
+    background-color:#F2E8CF;
+    width:50vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    padding: 80px 50px;
+    border-radius: 18px;
+    box-shadow: 2px 2px 12px rgb(66, 124, 225) ;
+    
+}
+.searchBox{
+    display:flex;
+    justify-content: center;
+}
+#wordInput{
+    width:20em;
+    height: 1.5em;
+    padding: 4px;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid rgb(66, 124, 225);
+
+}
+#searchBtn{
+    outline: none;
+    width: 10%;
+    background-color: rgb(3, 41, 105);
+    border: none;
+    border-radius: 3px;
+    color:white;
+}
+#searchBtn:hover{
+    cursor: pointer;
+}
+.result{
+    position:relative;
+    margin-left: 23%;
+}
+.result h3{
+    font-size:30px;
+    color:rgb(3, 41, 105);
+    margin-bottom: 10px;
+}
+.result .word{
+    display:flex;
+    justify-content: space-between;
+}
+.result .word button{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: rgb(3, 41, 105);
+}
+.result .word i:hover{
+    cursor: pointer;
+}
+.result .detail{
+    display:flex;
+    flex-direction: row;
+    column-gap: 10px;
+    color:rgb(129, 103, 103);
+}
+.result .detail p{
+    margin: 0px;
+}
+.wordMeaning{
+    color:rgb(98, 67, 67)
+}
+.wordExample{
+    color:rgb(98, 67, 67);
+    border-left: 4px solid #162719;
+    font-style: italic;
+    padding-left: 20px;
+    margin-top: 4vh;
+    
+}
+.error{
+    margin-top: 75px;
+    text-align: center;
+}
+.welcomeLine{
+    margin-bottom: 2vh;
+    padding-left: 22vh;
+    color: #162719;
+}
